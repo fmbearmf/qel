@@ -1,8 +1,8 @@
 import { read, write } from "../io/io.ts";
 
 export function ioTest() {
-    let testString: string = "test";
-    let testPath: string = './data.txt'
+    const testString = "test";
+    const testPath = './data.txt'
 
     if(write(testPath, testString).includes(testString)) {
         console.log("Write Pass");
@@ -11,4 +11,6 @@ export function ioTest() {
     if(read(testPath).includes(testString)) {
         console.log("Read Pass");
     } else console.log("Read Fail");
+
+    write(testPath, '');
 }
