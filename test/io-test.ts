@@ -1,4 +1,4 @@
-import { read, write } from "./io/io.ts";
+import { read, write } from "../io/io.ts";
 
 export function ioTest() {
     let testString: string = "test";

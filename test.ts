@@ -1,3 +1,3 @@
-import { ioTest } from "./io-test.ts";
+import { ioTest } from "./test/io-test.ts";
 
 ioTest()
